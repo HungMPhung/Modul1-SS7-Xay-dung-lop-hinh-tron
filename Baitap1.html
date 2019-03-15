@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Circle = function (radius) {
+        this.radius = radius;
+
+        this.getRadius = function () {
+            return this.radius;
+        };
+        this.setArea = function() {
+            return Math.PI * radius * radius;
+        };
+    };
+
+    let Circle2 = new Circle(2);
+    let radius = Circle2.getRadius();
+    let area = Circle2.setArea();
+
+    console.log("Dien tich la " + area + " va Ban kinh la " + radius);
+</script>
+</body>
+</html>
